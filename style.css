@@ -127,20 +127,20 @@ header ul a:hover{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 180vh; /* Matches video height to ensure proper coverage */
+    height: 180vh; /* Matches video height */
     display: flex;
     justify-content: center;
     z-index: -1;
     mix-blend-mode: lighten;
-    overflow: hidden; /* Prevents overflow issues */
+    overflow: hidden; /* Prevents overflow */
 }
 
 .blackhole-box video {
     width: 100%;
     height: 180vh; /* Maintains specified height */
-    object-fit: cover; /* Ensures video scales correctly without distortion */
+    object-fit: cover; /* Ensures proper scaling */
     position: relative;
-    top: 0; /* Ensures video stays at the top */
+    top: 0; /* Keeps video at the top */
 }
 
 .blackhole-box::after {
@@ -149,10 +149,9 @@ header ul a:hover{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20%; /* Adjust height of fade/blur area as needed */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); /* Fades to semi-transparent black */
-    backdrop-filter: blur(5px); /* Applies subtle blur to bottom */
-    pointer-events: none; /* Ensures the overlay doesn’t interfere with interactions */
+    height: 30%; /* Taller fade area for smoother transition */
+    background: linear-gradient(to top, #000000, transparent); /* Fades to black, matching a typical dark background */
+    pointer-events: none; /* Prevents interaction with overlay */
 }
 
 .hero{
